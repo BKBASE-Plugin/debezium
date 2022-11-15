@@ -3,11 +3,7 @@
   <parent>
     <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-parent</artifactId>
-<<<<<<< HEAD
-    <version>1.6.4.Final</version>
-=======
-    <version>1.5.4-bkbase.1-SNAPSHOT</version>
->>>>>>> eee2a546f (chore: change group id to com.tencent.bk.base.datahub #1)
+    <version>1.6.4-bkbase.1</version>
     <relativePath>../debezium-parent/pom.xml</relativePath>
   </parent>
   <modelVersion>4.0.0</modelVersion>

@@ -16,10 +16,10 @@
     <packaging>pom</packaging>
     <url>https://debezium.io</url>
     <scm>
-        <connection>scm:git:git@github.com:debezium/debezium.git</connection>
-        <developerConnection>scm:git:git@github.com:debezium/debezium.git</developerConnection>
-        <url>https://github.com/debezium/debezium</url>
-        <tag>v1.6.4.Final</tag>
+        <connection>scm:git:git@github.com:BKBASE-Plugin/debezium.git</connection>
+        <developerConnection>scm:git:git@github.com:BKBASE-Plugin/debezium.git</developerConnection>
+        <url>https://github.com/BKBASE-Plugin/debezium</url>
+        <tag>v1.6.4.bkbase-1</tag>
     </scm>
     <issueManagement>
         <system>jira</system>
@@ -46,6 +46,16 @@
             <organization>Red Hat</organization>
             <organizationUrl>http://redhat.com</organizationUrl>
             <timezone>+2</timezone>
+        </developer>
+        <developer>
+            <id>bk-base</id>
+            <name>bk-base</name>
+            <url>https://bk.tencent.com/</url>
+            <email>contactus_bk@tencent.com</email>
+            <roles>
+                <role>Manager</role>
+            </roles>
+            <timezone>+8</timezone>
         </developer>
     </developers>
     <properties>
@@ -86,7 +96,7 @@
         <version.build-helper.plugin>1.9.1</version.build-helper.plugin>
 
         <!-- Which Maven Central infra should be used -->
-        <release.endpoint>https://s01.oss.sonatype.org/</release.endpoint>
+        <release.endpoint>https://oss.sonatype.org/</release.endpoint>
 
         <!-- Kafka and it's dependencies MUST reflect what the Kafka version uses -->
         <version.kafka>2.7.1</version.kafka>
