@@ -27,7 +27,7 @@ To use this module, add the `debezium-embedded` module to your application's dep
 [source,xml]
 ----
 <dependency>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-embedded</artifactId>
     <version>${version.debezium}</version>
 </dependency>
@@ -40,7 +40,7 @@ Likewise, add dependencies for each of the Debezium connectors that your applica
 [source,xml]
 ----
 <dependency>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-connector-mysql</artifactId>
     <version>${version.debezium}</version>
 </dependency>
@@ -51,7 +51,7 @@ Or for the MongoDB connector:
 [source,xml]
 ----
 <dependency>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-connector-mongodb</artifactId>
     <version>${version.debezium}</version>
 </dependency>

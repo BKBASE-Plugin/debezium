@@ -2,9 +2,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <parent>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-testing</artifactId>
-    <version>1.5.4.Final</version>
+    <version>1.5.4-bkbase.1-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
@@ -264,35 +264,35 @@
 
       <dependencies>
         <dependency>
-          <groupId>io.debezium</groupId>
+          <groupId>com.tencent.bk.base.datahub</groupId>
           <artifactId>debezium-connector-mysql</artifactId>
           <classifier>plugin</classifier>
           <type>zip</type>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>io.debezium</groupId>
+          <groupId>com.tencent.bk.base.datahub</groupId>
           <artifactId>debezium-connector-postgres</artifactId>
           <classifier>plugin</classifier>
           <type>zip</type>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>io.debezium</groupId>
+          <groupId>com.tencent.bk.base.datahub</groupId>
           <artifactId>debezium-connector-sqlserver</artifactId>
           <classifier>plugin</classifier>
           <type>zip</type>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>io.debezium</groupId>
+          <groupId>com.tencent.bk.base.datahub</groupId>
           <artifactId>debezium-connector-mongodb</artifactId>
           <classifier>plugin</classifier>
           <type>zip</type>
           <version>${project.version}</version>
         </dependency>
         <dependency>
-          <groupId>io.debezium</groupId>
+          <groupId>com.tencent.bk.base.datahub</groupId>
           <artifactId>debezium-connector-db2</artifactId>
           <classifier>plugin</classifier>
           <type>zip</type>

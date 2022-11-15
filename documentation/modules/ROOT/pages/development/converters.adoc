@@ -93,7 +93,7 @@ To compile the code it is necessary to provide dependencies to the `debezium-api
 [source,xml]
 ----
 <dependency>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-api</artifactId>
     <version>${version.debezium}</version>
 </dependency>
