@@ -4,9 +4,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-quarkus-outbox-parent</artifactId>
-        <version>1.6.4.Final</version>
+        <version>1.6.4-bkbase.1</version>
 	<relativePath>../pom.xml</relativePath>
     </parent>
 
@@ -30,7 +30,7 @@
         </dependency>
         <!-- Needed primarily for @Incubating annotation -->
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-api</artifactId>
         </dependency>
 

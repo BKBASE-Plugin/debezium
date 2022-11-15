@@ -11,7 +11,7 @@ This `debezium-embedded` module defines a small library that allows an applicati
 To use this module, add the `debezium-embedded` module to your application's dependencies. For Maven, this entails adding the following to your application's POM:
 
     <dependency>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-embedded</artifactId>
         <version>${version.debezium}</version>
     </dependency>
@@ -21,7 +21,7 @@ where `${version.debezium}` is either the version of Debezium you're using or a 
 Likewise, add dependencies for each the Debezium connectors that your application will use. For example, the following can be added to your application's Maven POM file so your application can use the MySQL connector:
 
     <dependency>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-connector-mysql</artifactId>
         <version>${version.debezium}</version>
     </dependency>

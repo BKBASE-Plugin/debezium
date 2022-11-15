@@ -4,9 +4,9 @@
 
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-parent</artifactId>
-        <version>1.6.4.Final</version>
+        <version>1.6.4-bkbase.1</version>
 	<relativePath>../debezium-parent/pom.xml</relativePath>
     </parent>
 
