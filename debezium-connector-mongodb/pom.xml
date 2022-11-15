@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-parent</artifactId>
-        <version>1.5.4.Final</version>
+        <version>1.5.4-bkbase.1-SNAPSHOT</version>
 	<relativePath>../debezium-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -12,7 +12,7 @@
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-core</artifactId>
         </dependency>
         <dependency>
@@ -37,19 +37,19 @@
 
         <!-- Testing -->
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-embedded</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-embedded</artifactId>
             <scope>test</scope>
         </dependency>
@@ -254,7 +254,7 @@
                         <version>${version.assembly.plugin}</version>
                         <dependencies>
                             <dependency>
-                                <groupId>io.debezium</groupId>
+                                <groupId>com.tencent.bk.base.datahub</groupId>
                                 <artifactId>debezium-assembly-descriptors</artifactId>
                                 <version>${project.version}</version>
                             </dependency>

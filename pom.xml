@@ -8,9 +8,9 @@
   </parent>
 
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-build-parent</artifactId>
-    <version>1.5.4.Final</version>
+    <version>1.5.4-bkbase.1-SNAPSHOT</version>
     <name>Debezium Build Aggregator</name>
     <description>Debezium is an open source change data capture platform</description>
     <packaging>pom</packaging>
