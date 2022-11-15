@@ -3,7 +3,7 @@
     <parent>
         <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-build-parent</artifactId>
-        <version>1.5.4-bkbase.1-SNAPSHOT</version>
+        <version>1.5.4-bkbase.1</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
