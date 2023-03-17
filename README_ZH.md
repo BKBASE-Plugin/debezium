@@ -136,3 +136,44 @@ Postgres连接器支持三个逻辑解码插件，用于从DB服务器到连接�
 ## 贡献源码(Contributing)
 
 Debezium社区欢迎任何愿意以任何方式提供帮助的人，无论是报告问题、帮助文档，还是提供代码更改以修复错误、添加测试或实现新功能。有关详细信息，请参阅本[文档](CONTRIBUTE.md)。
+
+
+## 编译和部署BKBase版本
+
+### 注意事项
+
+1. 当前版本1.6.x必须使用java 11编译。必须正确设置JAVA_HOME环境变量，否则checkstyle阶段会失败。
+
+2. 如果在windows机器上编译，需要使用cmd或者powershell，以便能正确使用签名工具。
+
+3. 在根目录的pom.xml中修改maven-gpg-plugin配置，设置keyname/passphrase/secretKeyring等属性的值
+
+
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                    <goal>sign</goal>
+                                </goals>
+                                <configuration>
+                                    <keyname>xxxx</keyname>
+                                    <passphrase>xxxx</passphrase>
+                                    <secretKeyring>/path/to/secring.gpg</secretKeyring>
+                                    <gpgArguments>
+                                        <arg>--pinentry-mode</arg>
+                                        <arg>loopback</arg>
+                                    </gpgArguments>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+
+4. 编译和安装到本地maven命令如下：
+
+    $ mvn clean install -DskipITs -DskipTests -P docs,release-sign-artifacts
+
+5. 检查在本地生成的产出物包含javadoc/sources/test-sources等。使用mvn deploy将包部署到sonatype，然后校验并release，等待包正式发布到maven中央仓库。

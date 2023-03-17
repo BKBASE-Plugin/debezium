@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <groupId>io.debezium</groupId>
+        <groupId>com.tencent.bk.base.datahub</groupId>
         <artifactId>debezium-parent</artifactId>
-        <version>1.6.4.Final</version>
+        <version>1.6.4-bkbase.1</version>
 	<relativePath>../debezium-parent/pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -27,7 +27,15 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>io.debezium</groupId>
+                <groupId>io.quarkus</groupId>
+                <artifactId>quarkus-bom</artifactId>
+                <version>${quarkus.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.tencent.bk.base.datahub</groupId>
                 <artifactId>debezium-server-bom</artifactId>
                 <version>${project.version}</version>
                 <type>pom</type>
@@ -56,11 +64,11 @@
         </dependency>
 
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-embedded</artifactId>
             <exclusions>
                 <exclusion>
@@ -82,7 +90,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-core</artifactId>
             <type>test-jar</type>
             <scope>test</scope>
@@ -112,7 +120,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.debezium</groupId>
+            <groupId>com.tencent.bk.base.datahub</groupId>
             <artifactId>debezium-connector-postgres</artifactId>
             <scope>test</scope>
         </dependency>
