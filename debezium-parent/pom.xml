@@ -335,7 +335,7 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <dependencies>
                             <dependency>
-                                <groupId>io.debezium</groupId>
+                                <groupId>com.tencent.bk.base.datahub</groupId>
                                 <artifactId>debezium-checkstyle</artifactId>
                                 <version>${project.version}</version>
                             </dependency>

@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.debezium</groupId>
+    <groupId>com.tencent.bk.base.datahub</groupId>
     <artifactId>debezium-server</artifactId>
-    <version>1.6.4.Final</version>
+    <version>1.6.4-bkbase.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <artifactId>debezium-server-pravega</artifactId>
@@ -24,7 +24,7 @@
   </dependencyManagement>
   <dependencies>
     <dependency>
-      <groupId>io.debezium</groupId>
+      <groupId>com.tencent.bk.base.datahub</groupId>
       <artifactId>debezium-server-core</artifactId>
     </dependency>
 
@@ -72,12 +72,12 @@
 
     <!-- Testing -->
     <dependency>
-      <groupId>io.debezium</groupId>
+      <groupId>com.tencent.bk.base.datahub</groupId>
       <artifactId>debezium-testing-testcontainers</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>io.debezium</groupId>
+      <groupId>com.tencent.bk.base.datahub</groupId>
       <artifactId>debezium-server-core</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

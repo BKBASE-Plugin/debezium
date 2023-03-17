@@ -142,13 +142,12 @@ Debezium社区欢迎任何愿意以任何方式提供帮助的人，无论是报
 
 ### 注意事项
 
-如果在windows机器上编译，需要使用cmd或者powershell，以便能正确使用签名工具。命令如下：
+1. 当前版本1.6.x必须使用java 11编译。必须正确设置JAVA_HOME环境变量，否则checkstyle阶段会失败。
 
-    $ mvn clean install -DskipITs -DskipTests -P docs,release-sign-artifacts
+2. 如果在windows机器上编译，需要使用cmd或者powershell，以便能正确使用签名工具。
 
-检查在本地生成的产出物包含javadoc/sources/test-sources等。
+3. 在根目录的pom.xml中修改maven-gpg-plugin配置，设置keyname/passphrase/secretKeyring等属性的值
 
-使用mvn deploy将包部署到sonatype，然后校验并release，等待包正式发布到maven中央仓库。deploy时需要指定gpg的配置，类似：
 
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
@@ -172,3 +171,9 @@ Debezium社区欢迎任何愿意以任何方式提供帮助的人，无论是报
                             </execution>
                         </executions>
                     </plugin>
+
+4. 编译和安装到本地maven命令如下：
+
+    $ mvn clean install -DskipITs -DskipTests -P docs,release-sign-artifacts
+
+5. 检查在本地生成的产出物包含javadoc/sources/test-sources等。使用mvn deploy将包部署到sonatype，然后校验并release，等待包正式发布到maven中央仓库。
